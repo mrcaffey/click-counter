@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss'
 
 class App extends Component {
   render() {
     return (
-      <div onClick={this.props.onClick}>
-        This div has been clicked {this.props.clicks} times.
+      <div>
+      <button onClick={this.props.onClick}>
+        This button has been clicked {this.props.clicks} times.
+      </button>
       </div>
     );
   }
